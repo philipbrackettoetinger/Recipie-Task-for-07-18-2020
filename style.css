@@ -1,0 +1,47 @@
+  
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Oswald');
+
+body {
+  background-size: cover;
+  font-family: 'Oswald', sans-serif;
+ 
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.articleImage {
+  float:left;
+  margin-right: 10px;
+}
+
+.container .jumbotron, .panel-default .panel-heading {
+  background: #15263d;
+  color: #fff;
+  border-radius: 0;
+}
+
+.panel {
+  background: rgba(255,255,255,0.7);
+  border-radius: 0;
+}
+
+.panel-default {
+  border: 3px solid #15263d;
+}
+
+.well {
+  border-bottom: 3px solid #15263d;
+}
+
+.well h2 {
+  margin-top: 0;
+}
+.well .badge {
+  font-size: 16px;
+  padding: 5px 7px;
+  line-height: 12px;
+  border-radius: 12px;
+  background-color: #15263d;
+}
