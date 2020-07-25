@@ -11,41 +11,37 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+  
 </head>
 <body>
   <div class="container">
     <div class="row"> 
 
       <div class="jumbotron text-left">
-        <h1><img src="Assets/Icon150.png"></i> Reci-Pie</h1>
+        <h1><img src="Assets/Icon150.png" alt="Pie with Slice"></i> Reci-Pie</h1>
       </div>
     </div>
 
     <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-3">
       <div class="panel panel-default">
-        <div class="panel-heading"><img src="Assets/icon2150.png" style="width: 20px;height: 20px;"></i> Enter Your Search Here</div>
+        <div class="panel-heading"><img src="Assets/icon2150.png" style="width: 20px;height: 20px;" alt="Pie"></i> Enter Your Search Here</div>
           <div class="panel-body">
             <form>
 
               <div class="form-group">
-                <label for="numRecipes">How Many Recipes do you want?</label>
-                <input type="number" class="form-control" id="numRecipes" placeholder="5">
-              </div>
-
-              <div class="form-group">
-                <label for="ingredient">Ingredient:</label>
+                <label for="ingredient">Main Ingredient:</label>
                 <input type="text" class="form-control" id="ingredient" placeholder="Search Term">
               </div>
 
               <div class="form-group">
                 <label for="ingredientTwo">Ingredient Two (optional):</label>
-                <input type="text" class="form-control" id="ingredientTwo" >
+                <input type="text" class="form-control" id="ingredientTwo" placeholder="apple,orange, etc.">
               </div>
 
               <div class="form-group">
                 <label for="ingredientThree">Ingredient Three (optional):</label>
-                <input type="text" class="form-control" id="ingredientThree" >
+                <input type="text" class="form-control" id="ingredientThree" placeholder="apple,orange, etc." >
               </div>
 
              
@@ -58,7 +54,7 @@
 
     <div class="col-xs-12 col-sm-12 col-md-9">
       <div class="panel panel-default">
-        <div class="panel-heading"><img src="Assets/icon2150.png" style="width: 20px;height: 20px;"></i> Search Results</div>
+        <div class="panel-heading"><img src="Assets/icon2150.png" style="width: 20px;height: 20px;" alt="Pie"></i> Search Results</div>
           <div class="panel-body" id="searchResults">
 
            <div class="recipeCard" id="card">
