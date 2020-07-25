@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya|Oswald');
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
 body {
   background-size: cover;
@@ -8,8 +8,8 @@ body {
 }
 
 h1 {
-  -webkit-text-stroke: 2px black;
-  font-family: 'Russo One', sans-serif;
+  
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 h2,h3,h4,h5,h6 {
