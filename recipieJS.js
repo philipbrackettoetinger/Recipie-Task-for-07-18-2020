@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const apiKey = "&apiKey=b159b41ff9234e75bdc4a617a3838577";
+
+    //const apiKey = "&apiKey=b159b41ff9234e75bdc4a617a3838577";
+    const apiKey = "&apiKey=23073b038fc94f08905f8a9a9475ad67";
+
     var queryUrl = "https://api.spoonacular.com/recipes/complexSearch?query=apple,sugar,dessert&addRecipeInformation=true&number=5" + apiKey;
     bulmaCarousel.attach('#slider', {
         slidesToScroll: 1,
@@ -24,7 +27,10 @@ $(".submit").on("click", function () {
     var ingredientTwo = $("#ingredientTwo").val() + ",";
     var ingredientThree = $("#ingredientThree").val();
     var numResults = $("#numRecipes").val();
-    const apiKey = "&apiKey=b159b41ff9234e75bdc4a617a3838577";
+
+    //const apiKey = "&apiKey=b159b41ff9234e75bdc4a617a3838577";
+    const apiKey = "&apiKey=23073b038fc94f08905f8a9a9475ad67";
+
     var queryUrl = "https://api.spoonacular.com/recipes/complexSearch?query=" + ingredient + ingredientTwo + ingredientThree + "&addRecipeInformation=true&number=" + numResults + apiKey;
     console.log(queryUrl)
     $.ajax({
@@ -34,13 +40,23 @@ $(".submit").on("click", function () {
         .then(function (response) {
             console.log(response);
             
-            //clearForm(response);
+            clearForm();
             createCards(response);
             createRecipe(response);
            
         })
+        
 });
 
+function clearForm() {
+    $(".recipeCard").empty();
+    $("#recipeList").empty();
+    $("#cardOne").empty();
+    $("#cardTwo").empty();
+    $("#cardThree").empty();
+    $("#cardFour").empty();
+    
+}
 
 function createRecipe(response) {
     var image = $("<img>").attr("src", "https://spoonacular.com/recipeImages/" + response.results[0].id + "-312x231.jpg")
