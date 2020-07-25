@@ -44,7 +44,7 @@ $(".submit").on("click", function () {
 
 function createRecipe(response) {
     var image = $("<img>").attr("src", "https://spoonacular.com/recipeImages/" + response.results[0].id + "-312x231.jpg")
-    var title = $("<h4>").text(response.results[0].title)
+    var title = $("<h1>").addClass("title").text(response.results[0].title)
     var sourceURL = $("<a>").text(response.results[0].sourceUrl)
     var step1 = $("<li>").text(response.results[0].analyzedInstructions[0].steps[0].step)
     console.log(response.results[0].analyzedInstructions[0].steps[0].step)
@@ -59,8 +59,9 @@ function createRecipe(response) {
     $("#recipeList").append(step4)
 
     $(".recipeCard").append(image)
-    $(".recipeCard").prepend(title)
     $(".recipeCard").prepend(sourceURL)
+    $(".recipeCard").prepend(title)
+    
 
 }
 

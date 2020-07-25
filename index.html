@@ -7,22 +7,24 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-  <script type="text/javascript" src="recipieJS.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
 </head>
 <body>
   <div class="container">
     <div class="row"> 
 
       <div class="jumbotron text-left">
-        <h1><img src="Assets/Icon150.png" alt="Pie With Slice"></i> Reci-Pie</h1>
+        <h1><img src="Assets/Icon150.png"></i> Reci-Pie</h1>
       </div>
     </div>
 
     <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-3">
       <div class="panel panel-default">
-        <div class="panel-heading"><img src="Assets/icon2150.png" style="width: 20px;height: 20px;" alt="Pie"></i> Enter Your Search Here</div>
+        <div class="panel-heading"><img src="Assets/icon2150.png" style="width: 20px;height: 20px;"></i> Enter Your Search Here</div>
           <div class="panel-body">
             <form>
 
@@ -56,20 +58,17 @@
 
     <div class="col-xs-12 col-sm-12 col-md-9">
       <div class="panel panel-default">
-        <div class="panel-heading"><img src="Assets/icon2150.png" style="width: 20px;height: 20px;" alt="Pie"></i> Search Results</div>
+        <div class="panel-heading"><img src="Assets/icon2150.png" style="width: 20px;height: 20px;"></i> Search Results</div>
           <div class="panel-body" id="searchResults">
 
            <div class="recipeCard" id="card">
             <section class="section">
-                <h1 class="title">Card</h1>
+                <h1 class="title"></h1>
+                <ul id = "recipeList">
+
+                </ul>
               </div>
             </section>
-
-            <div class="recipeCard2" id="card">
-              <section class="section">
-                  <h1 class="title">Card</h1>
-                </div>
-              </section>
 
             </div>
            </div>
@@ -78,5 +77,88 @@
       </div>
     </div>
   </div>
+  <section class="section">
+    <div id="slider">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9 is-covered">
+            <img
+              src="https://images.unsplash.com/photo-1550930516-af8b8cc4f871?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+              alt=""
+            />
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="item__title">
+            Mon titre 5
+          </div>
+          <div class="item__description">
+            Ici une petite description pour tester le slider
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image" >
+          <figure class="image is-16by9 is-covered">
+
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="item__title">
+            Mon titre 4
+          </div>
+          <div class="item__description">
+            Ici une petite description pour tester le slider
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9 is-covered" id="cardTwo">
+
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="item__title">
+            Mon titre 5
+          </div>
+          <div class="item__description">
+            Ici une petite description pour tester le slider
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9 is-covered" id="cardThree">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="item__title">
+            Mon titre 5
+          </div>
+          <div class="item__description">
+            Ici une petite description pour tester le slider
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-16by9 is-covered" id="cardFour">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="item__title">
+            Mon titre 5
+          </div>
+          <div class="item__description">
+            Ici une petite description pour tester le slider
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript" src="recipieJS.js"></script>
 </body>
 </html>
