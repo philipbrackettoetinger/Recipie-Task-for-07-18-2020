@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya|Oswald');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 body {
   background-size: cover;
@@ -6,7 +7,12 @@ body {
  
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1 {
+  -webkit-text-stroke: 2px black;
+  font-family: 'Russo One', sans-serif;
+}
+
+h2,h3,h4,h5,h6 {
   font-family: 'Oswald', sans-serif;
 }
 
@@ -16,7 +22,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .panel-default .panel-heading {
-  background: #15263d;
+  background: #b21b1b;
   color: #fff;
   border-radius: 0;
 }
@@ -27,11 +33,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .panel-default {
-  border: 3px solid #15263d;
+  border: 3px solid #b21b1b;
 }
 
 .well {
-  border-bottom: 3px solid #15263d;
+  border-bottom: 3px solid #b21b1b;
 }
 
 .well h2 {
@@ -42,13 +48,13 @@ h1,h2,h3,h4,h5,h6 {
   padding: 5px 7px;
   line-height: 12px;
   border-radius: 12px;
-  background-color: #15263d;
+  background-color: #b21b1b;
 }
 
 .container .jumbotron {
-  background-image: url(https://i2.wp.com/metro.co.uk/wp-content/uploads/2018/05/a058ad9611914c08b059c43b32dcf514.jpg?quality=90&strip=all&zoom=1&resize=644%2C361&ssl=1);
-  background-size: 100% 100%;
-  color: #060147;
+  background-image: url(https://bluecanyonpartners.com/wp-content/uploads/2015/06/iStock_84862873_LARGE.jpg);
+  background-size: cover;
+  color: #ffffff;
 }
 
 .card {
