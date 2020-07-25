@@ -1,19 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Alegreya|Oswald');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
 
 body {
   background-size: cover;
-  font-family: 'Oswald', sans-serif;
+  background-color: #d3d3d3;
+  font-family: 'Raleway', sans-serif;
  
 }
 
 h1 {
-  
   font-family: 'Julius Sans One', sans-serif;
 }
 
 h2,h3,h4,h5,h6 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+
+.form-group {
+  font-family: 'Raleway', sans-serif;
+}
+
+.panel-heading {
+  font-family: 'Raleway', sans-serif;
 }
 
 .articleImage {
@@ -33,11 +42,11 @@ h2,h3,h4,h5,h6 {
 }
 
 .panel-default {
-  border: 3px solid #b21b1b;
+  border: 2px solid #b21b1b;
 }
 
 .well {
-  border-bottom: 3px solid #b21b1b;
+  border-bottom: 2px solid #b21b1b;
 }
 
 .well h2 {
@@ -55,6 +64,7 @@ h2,h3,h4,h5,h6 {
   background-image: url(https://bluecanyonpartners.com/wp-content/uploads/2015/06/iStock_84862873_LARGE.jpg);
   background-size: cover;
   color: #ffffff;
+  border: 1px solid #060147;
 }
 
 .card {
