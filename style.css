@@ -70,3 +70,21 @@ h2,h3,h4,h5,h6 {
 .card {
   word-wrap: normal;
 }
+
+.mainImage{
+  float: right;
+  position: relative; top: -60px;
+  border: 2px solid #b21b1b;
+}
+
+#slider{
+  border: 2px solid #060147;
+}
+#ingredientList,
+#stepList{
+  padding: 20px;
+}
+
+ul {
+  list-style: unset !important;
+}

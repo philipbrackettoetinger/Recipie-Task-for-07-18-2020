@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
     var queryUrl = "https://api.spoonacular.com/recipes/complexSearch?query=apple,sugar,dessert&addRecipeInformation=true&number=6" + apiKey;
     bulmaCarousel.attach('#slider', {
         slidesToScroll: 1,
-        slidesToShow: 3,
-        infinite: true,
+        slidesToShow: 4,
+        infinite: false,
     });
     $.ajax({
         url: queryUrl,
@@ -40,7 +40,11 @@ $(".submit").on("click", function () {
 });
 
 function clearForm() {
-    $(".recipeCard").empty();
+    //$(".recipeCard").empty();
+    $(".title").empty();
+    $(".mainLink").empty();
+    $(".mainImage").empty();
+    
     $("#stepList").empty();
     $("#ingredientList").empty();
     $("#cardOne").empty();
@@ -60,52 +64,27 @@ function createRecipe(response) {
     var image = $("<img>").addClass("mainImage").attr("src", "https://spoonacular.com/recipeImages/" + response.results[0].id + "-312x231.jpg")
     var title = $("<h1>").addClass("title").text(response.results[0].title)
     var sourceURL = $("<a>").addClass("mainLink").text(response.results[0].sourceUrl)
+    $(".recipeCard").prepend(image)
+    $(".recipeCard").prepend(sourceURL)
+    $(".recipeCard").prepend(title)
 
-    for (let i = 0; i < response.results[0].analyzedInstructions[0].steps.length; i++){
+    for (let i = 0; i < response.results[0].analyzedInstructions[0].steps.length; i++) {
         var step1 = $("<li>").text(response.results[0].analyzedInstructions[0].steps[i].step)
-    console.log(step1)
-    $("#stepList").append(step1)
+        console.log(step1)
+        $("#stepList").append(step1)
     }
-    /*
-    var step2 = $("<li>").text(response.results[0].analyzedInstructions[0].steps[1].step)
-    var step3 = $("<li>").text(response.results[0].analyzedInstructions[0].steps[2].step)
-    var step4 = $("<li>").text(response.results[0].analyzedInstructions[0].steps[3].step)
-    ?*/
-    
 
-        /*
-        var ingredient2 = $("<li>").text(response.results[0].analyzedInstructions[0].steps[0].ingredients[1].name)
-        var ingredient3 = $("<li>").text(response.results[0].analyzedInstructions[0].steps[0].ingredients[2].name)
-        var ingredient4 = $("<li>").text(response.results[0].analyzedInstructions[0].steps[0].ingredients[3].name)
-        }
-        */
-
-  
-        /*
-        $("#stepList").append(step2)
-        $("#stepList").append(step3)
-        $("#stepList").append(step4)
-        */
-
-        /*
-        $("#ingredientList").append(ingredient2)
-        $("#ingredientList").append(ingredient3)
-        $("#ingredientList").append(ingredient4)
-    */
-        $(".recipeCard").append(image)
-        $(".recipeCard").prepend(sourceURL)
-        $(".recipeCard").prepend(title)
-        for (let i = 0; i < response.results[0].analyzedInstructions[0].steps[0].ingredients.length; i++) {
-            var ingredient1 = $("<li>").text(response.results[0].analyzedInstructions[0].steps[0].ingredients[i].name)
-            $("#ingredientList").append(ingredient1)
+    for (let i = 0; i < response.results[0].analyzedInstructions[0].steps[0].ingredients.length; i++) {
+        var ingredient1 = $("<li>").text(response.results[0].analyzedInstructions[0].steps[0].ingredients[i].name)
+        $("#ingredientList").append(ingredient1)
 
     }
-    }
+}
 
 
 function createCards(response) {
 
-    
+
     var cardOne = $("<img>").attr("src", "https://spoonacular.com/recipeImages/" + response.results[1].id + "-312x231.jpg")
     var titleOne = $("<h4>").addClass("title").text(response.results[1].title)
     var cardTwo = $("<img>").attr("src", "https://spoonacular.com/recipeImages/" + response.results[2].id + "-312x231.jpg")
