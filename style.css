@@ -71,10 +71,19 @@ h3,h4,h5,h6 {
   word-wrap: normal;
 }
 
+.cardImage
+.card
+{
+    max-height: 213px;
+    max-width: 312px;
+}
+
 .mainImage{
   float: right;
-  position: relative; top: -60px;
+  margin-top: 10px;
   border: 2px solid #b21b1b;
+  max-height: 213px;
+  max-width: 312px;
 }
 
 #slider{
@@ -100,4 +109,7 @@ ul {
 {
   font-size: larger;
   font-weight: 400 ;
+}
+.maintitle{
+    font-size: x-large;
 }
